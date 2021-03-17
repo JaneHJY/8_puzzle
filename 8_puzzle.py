@@ -195,9 +195,9 @@ board = [[1,2,3],[4,5,0],[6,7,8]]
 puzzle = Puzzle(board)
 #puzzle = puzzle.shuffle()
 s = Solver(puzzle)
-tic = time.clock()
+tic = time.perf_counter()
 p = s.solve()
-toc = time.clock()
+toc = time.perf_counter()
 
 steps = 0
 for node in p:
